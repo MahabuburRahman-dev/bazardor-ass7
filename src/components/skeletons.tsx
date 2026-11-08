@@ -1,0 +1,1 @@
+export function ProductSkeletons({count=8}:{count?:number}){return <div className="product-grid">{Array.from({length:count}).map((_,i)=><div className="skeleton-card" key={i}><div className="skeleton skeleton-icon"/><div className="skeleton skeleton-line wide"/><div className="skeleton skeleton-line short"/><div className="skeleton skeleton-line medium"/></div>)}</div>}
